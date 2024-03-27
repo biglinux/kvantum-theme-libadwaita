@@ -24,4 +24,7 @@ package() {
     cd $_pkgname/src
     install -d "$pkgdir"/usr/share/Kvantum/
     cp -r $_pkgname "$pkgdir"/usr/share/Kvantum
+    mkdir -p "$pkgdir/usr/lib/qt6/plugins/org.kde.kdecoration2.kcm/klassydecoration/presets/"
+    cp Klassy/BigAdwaitaRound.klpw "$pkgdir/usr/lib/qt6/plugins/org.kde.kdecoration2.kcm/klassydecoration/presets/"
+    cp -r Colors "$pkgdir/usr/share/color-schemes"
 }
